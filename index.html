@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Portal de visores de salud de la Región de Ñuble: Anuario, SRP, Neumo23, mortalidad cardiovascular, cáncer y discapacidad.">
+<meta name="theme-color" content="#1d7469">
+<title>Visores de Salud Ñuble</title>
+<link rel="stylesheet" href="styles.css">
+<script src="visores.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#visores">Ir a los visores</a>
+<div class="shell">
+ <aside class="sidebar">
+  <a class="brand" href="#inicio" aria-label="Salud Ñuble, inicio"><div class="seal" aria-hidden="true">Ñ</div><div><b>SALUD ÑUBLE</b><small>BIOESTADÍSTICA</small></div></a>
+  <div class="nav-title">Explorar información</div>
+  <nav class="nav" aria-label="Temas de los visores">
+   <a class="active" href="#visores" data-topic="all" aria-current="true"><span class="ico" aria-hidden="true">▦</span>Todos los visores<span class="count-badge">6</span></a>
+   <a href="#visores" data-topic="anuario"><span class="ico" aria-hidden="true">▥</span>Anuario de salud</a>
+   <a href="#visores" data-topic="mortalidad"><span class="ico" aria-hidden="true">♡</span>Mortalidad</a>
+   <a href="#visores" data-topic="inmunizaciones"><span class="ico" aria-hidden="true">✳</span>Inmunizaciones</a>
+   <a href="#visores" data-topic="campanas"><span class="ico" aria-hidden="true">⌁</span>Campañas especiales</a>
+   <a href="#visores" data-topic="discapacidad"><span class="ico" aria-hidden="true">◉</span>Discapacidad</a>
+  </nav>
+  <div class="side-bottom"><small>Portal regional</small><p>Indicadores y herramientas para explorar la situación de salud de Ñuble.</p></div>
+ </aside>
+ <main class="main" id="inicio">
+  <div class="topline"><div class="crumb">Inicio <span aria-hidden="true">›</span> <strong>Visores y dashboards</strong></div><div class="profile"><div class="avatar" aria-hidden="true">Ñ</div><span>Región de Ñuble</span></div></div>
+  <section class="hero" aria-labelledby="portal-title"><div class="hero-content"><div class="eyebrow">SEREMI de Salud · Región de Ñuble</div><h1 id="portal-title">Datos para mirar<br>la salud de Ñuble.</h1><p>Un acceso directo a visores, indicadores y dashboards regionales. Explora la información por tema y entra al tablero que necesitas.</p><div class="hero-meta"><span class="pill">⌖ Información regional</span><span class="pill">↗ Visores interactivos</span></div></div></section>
+  <div class="searchrow"><label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Buscar por nombre, tema o período…" aria-label="Buscar visores por nombre, tema o período" autocomplete="off" aria-controls="cards"></label><span class="results" id="resultCount" role="status" aria-live="polite">6 visores disponibles</span></div>
+  <div class="filters" role="group" aria-label="Filtrar por tema">
+   <button type="button" class="filter selected" data-topic="all" aria-pressed="true">Todos</button>
+   <button type="button" class="filter" data-topic="anuario" aria-pressed="false">Anuario</button>
+   <button type="button" class="filter" data-topic="mortalidad" aria-pressed="false">Mortalidad</button>
+   <button type="button" class="filter" data-topic="inmunizaciones" aria-pressed="false">Inmunizaciones</button>
+   <button type="button" class="filter" data-topic="campanas" aria-pressed="false">Campañas especiales</button>
+   <button type="button" class="filter" data-topic="discapacidad" aria-pressed="false">Discapacidad</button>
+  </div>
+  <div class="section-head" id="visores"><div><h2>Visores disponibles</h2><p>Selecciona un visor para abrirlo en una nueva pestaña.</p></div><div class="sort">6 publicados <span aria-hidden="true">·</span> Enlaces verificados</div></div>
+  <section class="cards" id="cards" aria-label="Catálogo de visores"></section>
+  <div class="empty" id="empty" hidden><p>No hay visores que coincidan con esa búsqueda.</p><button class="clear" type="button" id="clearFilters">Limpiar búsqueda y filtros</button></div>
+  <noscript><p class="no-script">Activa JavaScript para ver el catálogo y utilizar el buscador. También puedes consultar la lista en <a href="ENLACES_VERIFICADOS.md">Enlaces verificados</a>.</p></noscript>
+  <footer class="footer"><span><strong>SEREMI de Salud Ñuble</strong> · Unidad de Bioestadística</span><span>Enlaces verificados el 27 de octubre de 2026</span></footer>
+ </main>
+</div>
+</body>
+</html>
