@@ -44,6 +44,26 @@ window.PORTAL_VISORES = [
     "busqueda": "sarampion rubeola parotiditis vacunacion vacunas registros inmunizaciones"
   },
   {
+    "id": "pni",
+    "nombre": "Vacunas Programáticas — PNI",
+    "temas": [
+      "inmunizaciones"
+    ],
+    "tema": "Inmunizaciones",
+    "descripcion": "Registros mensuales de vacunación por vacuna, formulación, dosis y comuna de residencia en Ñuble.",
+    "periodo": "2019–2026",
+    "nota": "Conteos absolutos de registros; no personas únicas ni coberturas.",
+    "tags": [
+      "PNI",
+      "21 comunas"
+    ],
+    "url": "https://davidcarterc86-debug.github.io/visor-pni-nuble/",
+    "repo": "visor-pni-nuble",
+    "icono": "vaccine",
+    "tono": "blue",
+    "busqueda": "pni vacunas programaticas vacunacion inmunizaciones dosis mensual maternidad"
+  },
+  {
     "id": "neumo23",
     "nombre": "Visor Neumo23 Ñuble",
     "temas": [
