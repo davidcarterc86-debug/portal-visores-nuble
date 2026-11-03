@@ -49,6 +49,12 @@
   cards.append(article);
   return { article, visor, text: normalize([visor.nombre, visor.tema, visor.descripcion, visor.periodo, visor.nota, visor.busqueda, ...visor.tags].join(' ')) };
  });
+ // Existing badges count catalog cards, independently of active search filters.
+ controls.forEach(control => {
+  const badge = control.querySelector('.count-badge');
+  if (badge) badge.textContent = rendered.filter(({ visor }) =>
+   control.dataset.topic === 'all' || visor.temas.includes(control.dataset.topic)).length;
+ });
  function filterCards() {
   const words = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
   let visible = 0;
